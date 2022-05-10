@@ -1,0 +1,12 @@
+.data
+
+e: 	.word 'e' 0
+
+.text
+.globl main
+
+main:	
+	li a7, 4
+	la a0, e
+	ecall
+	j main
